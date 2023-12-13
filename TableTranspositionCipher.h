@@ -1,13 +1,17 @@
-#ifndef TABLETRANSPOSITIONCIPHER_H
-#define TABLETRANSPOSITIONCIPHER_H
+#ifndef BYBLIK_H
+#define BYBLIK_H
+
 #include <string>
-class TableTranspositionCipher
-{
+
+class byblik {
 public:
-    TableTranspositionCipher(int numColumns);
-    std::string encrypt(std::string& plaintext);
-    std::string decrypt(std::string& ciphertext);
+    byblik(int numColumns);
+
+    std::string encrypt(const std::string& plaintext);
+    std::string decrypt(const std::string& ciphertext);
+
 private:
     int numColumns;
 };
+
 #endif
